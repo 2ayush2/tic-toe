@@ -42,11 +42,13 @@ function Board() {
       {finalValue ? (
         <>
           {checkWinner} won the game !
+          <br />
           <button onClick={handlearray}>Reset</button>
         </>
       ) : (
         <>
-          <h4>{isSquare ? "X" : "0"}</h4>
+          <h4>{isSquare ? "X" : "0"} : is your value</h4>
+          <br />
           <div className="row-content">
             <Square value={state[0]} onClick={() => handleClick(0)} />
             <Square value={state[1]} onClick={() => handleClick(1)} />
